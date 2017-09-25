@@ -1,0 +1,10 @@
+C:\Users\Administrator\Documents\GitHub\contactsapp\calculator-binh1204\calculator\calculator\bin\Debug\calculator.exe.config
+C:\Users\Administrator\Documents\GitHub\contactsapp\calculator-binh1204\calculator\calculator\bin\Debug\calculator.exe
+C:\Users\Administrator\Documents\GitHub\contactsapp\calculator-binh1204\calculator\calculator\bin\Debug\calculator.pdb
+C:\Users\Administrator\Documents\GitHub\contactsapp\calculator-binh1204\calculator\calculator\obj\Debug\calculator.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\contactsapp\calculator-binh1204\calculator\calculator\obj\Debug\calculator.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\contactsapp\calculator-binh1204\calculator\calculator\obj\Debug\calculator.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\contactsapp\calculator-binh1204\calculator\calculator\obj\Debug\calculator.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\contactsapp\calculator-binh1204\calculator\calculator\obj\Debug\calculator.exe
+C:\Users\Administrator\Documents\GitHub\contactsapp\calculator-binh1204\calculator\calculator\obj\Debug\calculator.pdb
+C:\Users\Administrator\Documents\GitHub\contactsapp\calculator-binh1204\calculator\calculator\obj\Debug\calculator.FrmMain.resources
