@@ -73,6 +73,7 @@
             this.btnDoidau.TabIndex = 17;
             this.btnDoidau.Text = "-/+";
             this.btnDoidau.UseVisualStyleBackColor = true;
+            this.btnDoidau.Click += new System.EventHandler(this.btndoidau_Click);
             // 
             // btn8
             // 
@@ -105,6 +106,7 @@
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Backspace";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnNho
             // 
@@ -290,6 +292,7 @@
             this.btnCan.TabIndex = 12;
             this.btnCan.Text = "ⱱ";
             this.btnCan.UseVisualStyleBackColor = true;
+            this.btnCan.Click += new System.EventHandler(this.btncan_Click);
             // 
             // FrmMain
             // 
