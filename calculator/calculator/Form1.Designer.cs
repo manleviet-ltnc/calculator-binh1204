@@ -115,6 +115,7 @@
             this.btnNho.TabIndex = 1;
             this.btnNho.Text = "C";
             this.btnNho.UseVisualStyleBackColor = true;
+            this.btnNho.Click += new System.EventHandler(this.btnNho_Click);
             // 
             // btn0
             // 
@@ -267,6 +268,7 @@
             this.btnPhantram.TabIndex = 7;
             this.btnPhantram.Text = "%";
             this.btnPhantram.UseVisualStyleBackColor = true;
+            this.btnPhantram.Click += new System.EventHandler(this.btnphantram_Click);
             // 
             // btnBang
             // 

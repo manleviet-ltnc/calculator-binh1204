@@ -83,7 +83,7 @@ namespace calculator
 
         private void FrmMain_KeyPress(object sender, KeyPressEventArgs e)
         {
-            switch(e.KeyChar)
+            switch (e.KeyChar)
             {
                 case '0':
                 case '1':
@@ -97,8 +97,51 @@ namespace calculator
                 case '9':
                     Nhapso("" + e.KeyChar);
                     break;
+                case '+': btnCong.PerformClick(); break;
 
+                case '-':
+                   btnTru.PerformClick(); break;
+                case '*': btnNhan.PerformClick(); break;
+                case '/': btnChia.PerformClick(); break;
+                case '=': btnBang.PerformClick(); break;
+                default: break;
             }
+        }
+         private void btncan_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = (Math.Sqrt(Double.Parse(lblDisplay.Text))).ToString();
+        }
+
+        private void btndoidau_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = (-1 * (double.Parse(lblDisplay.Text))).ToString();
+        }
+
+        private void btnphantram_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = ((double.Parse(lblDisplay.Text) / 100)).ToString();
+        }
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            {
+                if (lblDisplay.Text.Length > 0)
+                    lblDisplay.Text = lblDisplay.Text.Remove(lblDisplay.Text.Length - 1, 1);
+                if (lblDisplay.Text == "")
+                {
+                    lblDisplay.Text = "0";
+                }
+            }
+        }
+
+        private void btnNho_Click(object sender, EventArgs e)
+        {
+            nho = 0;
+            lblDisplay.Text = "0";
         }
     }
 }
+
+
+
+
+            
