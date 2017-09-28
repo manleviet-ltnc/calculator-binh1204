@@ -43,6 +43,7 @@ namespace calculator
 
         private void Nhappheptoan(object sender, EventArgs e)
         {
+            if(nho!=0)
             Tinhketqua();
 
             Button btn = (Button)sender;
@@ -137,6 +138,7 @@ namespace calculator
         {
             nho = 0;
             lblDisplay.Text = "0";
+        
         }
     }
 }
