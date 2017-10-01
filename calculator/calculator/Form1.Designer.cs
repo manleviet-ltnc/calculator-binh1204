@@ -227,6 +227,7 @@
             this.btnCham.TabIndex = 19;
             this.btnCham.Text = ".";
             this.btnCham.UseVisualStyleBackColor = true;
+            this.btnCham.Click += new System.EventHandler(this.btnCham_Click);
             // 
             // btnTru
             // 

@@ -19,7 +19,7 @@ namespace calculator
 
         bool isTypingNumber = false;
 
-        enum Pheptoan { Cong, Tru, Nhan, Chia };
+        enum Pheptoan { None, Cong, Tru, Nhan, Chia };
         Pheptoan pheptoan;
 
         double nho;
@@ -33,14 +33,18 @@ namespace calculator
         private void Nhapso(string so)
         {
             if (isTypingNumber)
-                lblDisplay.Text = lblDisplay.Text + so;
+            {
+                if (lblDisplay.Text == "0")
+                    lblDisplay.Text = "";
+
+                lblDisplay.Text += so;
+            }
             else
             {
                 lblDisplay.Text = so;
                 isTypingNumber = true;
             }
         }
-
         private void Nhappheptoan(object sender, EventArgs e)
         {
             if(nho!=0)
@@ -80,6 +84,8 @@ namespace calculator
         {
             Tinhketqua();
             isTypingNumber = false;
+            nho = 0;
+            pheptoan = Pheptoan.None;
         }
 
         private void FrmMain_KeyPress(object sender, KeyPressEventArgs e)
@@ -124,24 +130,32 @@ namespace calculator
         }
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            {
-                if (lblDisplay.Text.Length > 0)
-                    lblDisplay.Text = lblDisplay.Text.Remove(lblDisplay.Text.Length - 1, 1);
-                if (lblDisplay.Text == "")
-                {
-                    lblDisplay.Text = "0";
-                }
-            }
+            if (lblDisplay.Text != "")
+                lblDisplay.Text = lblDisplay.Text.Remove(lblDisplay.Text.Length - 1);
+            if (lblDisplay.Text == "")
+                lblDisplay.Text = "0";
         }
-
         private void btnNho_Click(object sender, EventArgs e)
         {
             nho = 0;
             lblDisplay.Text = "0";
-        
         }
+         private void btnCham_Click(object sender, EventArgs e)
+        {
+              if (lblDisplay.Text.Contains("."))
+            {
+                if (lblDisplay.Text== "0.")
+                {
+                    lblDisplay.Text = "";
+                    Nhapso("0.");
+                }
+                return;
+            }
+            lblDisplay.Text += ".";  
+        }
+      }
     }
-}
+
 
 
 
